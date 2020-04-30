@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>log on YunFeng</title>
+    <link>https://logo-wuji.github.io/author/log/</link>
+    <description>Recent content in log on YunFeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 </copyright>
+    <lastBuildDate>Tue, 07 Apr 2020 12:57:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://logo-wuji.github.io/author/log/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First</title>
+      <link>https://logo-wuji.github.io/article/first/</link>
+      <pubDate>Tue, 07 Apr 2020 12:57:44 +0800</pubDate>
+      
+      <guid>https://logo-wuji.github.io/article/first/</guid>
+      <description>Tencent game 腾讯游戏是一款风靡世界的腾讯手游
+$$ x*x=x2 $$
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; {{ partial &amp;#34;header.html&amp;#34; . }} &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;list wrapper clearfix&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;page-title&amp;#34;&amp;gt;{{ partial &amp;#34;head.html&amp;#34; . }}&amp;lt;/span&amp;gt; &amp;lt;hr&amp;gt; &amp;lt;!-- 在logblog的list将term引用代码过来 ，这判断在我的代码里面似乎用处不大--&amp;gt; {{ if isset .Data &amp;#34;Term&amp;#34; }} &amp;lt;h2 class=&amp;#34;page-title&amp;#34;&amp;gt;{{ .Data.Term }}&amp;lt;/h2&amp;gt; {{ else }} &amp;lt;h2 class=&amp;#34;page-title&amp;#34;&amp;gt;{{ .Name }}&amp;lt;/h2&amp;gt; {{ end }} &amp;lt;!-- 下面的排序按照发布时间来，功能参照了这个链接https://www.gohugo.org/doc/templates/list/ --&amp;gt; {{ range first 10 .Data.Pages.ByPublishDate }} &amp;lt;div class=&amp;#34;article-display&amp;#34;&amp;gt; &amp;lt;h1 class=&amp;#34;article-title&amp;#34;&amp;gt;&amp;lt;a href=&amp;#34;{{ .Permalink }}&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/a&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>test-1</title>
+      <link>https://logo-wuji.github.io/article/creat-theme/</link>
+      <pubDate>Tue, 07 Apr 2020 12:57:44 +0800</pubDate>
+      
+      <guid>https://logo-wuji.github.io/article/creat-theme/</guid>
+      <description>Style Demo h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading  This is bold text
+This is bold text
+This is italic text
+This is italic text
+Deleted text
+This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$ and with math blocks:
+$$ \sum_{n=1}^{\infty} 2^{-n} = 1 $$
+   Heading Another heading     text text   text text   text text     Block quotes are written like so.</description>
+    </item>
+    
+    <item>
+      <title>test-2</title>
+      <link>https://logo-wuji.github.io/article/test-two/</link>
+      <pubDate>Tue, 07 Apr 2020 12:57:44 +0800</pubDate>
+      
+      <guid>https://logo-wuji.github.io/article/test-two/</guid>
+      <description>Table of Contents  Move static content to static Create your Hugo configuration file Set your configuration publish folder to site Convert Jekyll templates to Hugo templates Convert Jekyll plugins to Hugo shortcodes  Implementation Usage   Finishing Touches  Fix Content Clean Up   A practical example in a diff  Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output.</description>
+    </item>
+    
+  </channel>
+</rss>

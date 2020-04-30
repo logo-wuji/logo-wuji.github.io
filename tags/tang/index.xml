@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tang on YunFeng</title>
+    <link>https://logo-wuji.github.io/tags/tang/</link>
+    <description>Recent content in Tang on YunFeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 </copyright>
+    <lastBuildDate>Thu, 09 Apr 2020 14:07:55 +0800</lastBuildDate>
+    
+	<atom:link href="https://logo-wuji.github.io/tags/tang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fourth</title>
+      <link>https://logo-wuji.github.io/article/fourth/</link>
+      <pubDate>Thu, 09 Apr 2020 14:07:55 +0800</pubDate>
+      
+      <guid>https://logo-wuji.github.io/article/fourth/</guid>
+      <description>==渡荆门送别==
+[唐代]李白 渡远荆门外，
+来从楚国游。
+山随平野尽，
+江入大荒流。
+月下飞天镜，
+云生结海楼。
+仍怜故乡水，
+万里送行舟。</description>
+    </item>
+    
+    <item>
+      <title>Third</title>
+      <link>https://logo-wuji.github.io/article/third/</link>
+      <pubDate>Tue, 07 Apr 2020 20:46:46 +0800</pubDate>
+      
+      <guid>https://logo-wuji.github.io/article/third/</guid>
+      <description>==离思五首其四==
+[唐代]元稹 曾经沧海难为水，
+除却巫山不是云。
+取次花丛懒回顾，
+半缘修道半缘仙。</description>
+    </item>
+    
+  </channel>
+</rss>

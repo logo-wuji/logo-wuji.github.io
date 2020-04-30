@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Author on YunFeng</title>
+    <link>https://logo-wuji.github.io/author/</link>
+    <description>Recent content in Author on YunFeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 </copyright>
+    <lastBuildDate>Tue, 07 Apr 2020 12:57:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://logo-wuji.github.io/author/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>log</title>
+      <link>https://logo-wuji.github.io/author/log/</link>
+      <pubDate>Tue, 07 Apr 2020 12:57:44 +0800</pubDate>
+      
+      <guid>https://logo-wuji.github.io/author/log/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

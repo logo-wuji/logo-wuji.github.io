@@ -1,0 +1,472 @@
+/* 默认的整体css布局 */
+body{
+    /* min-height: 300vh;
+    display: flex; */
+    background-color: rgb(250,250,250);
+    font-family: serif;
+}
+a{
+    text-decoration: none;
+}
+
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.iconfont{
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav{
+    text-align: center;
+}
+    /* 设置每个页面的内容存放宽度 */
+.wrapper{
+    width: 900px;
+    margin: auto;
+    /* position: absolute; */
+}
+
+/* topbar的css */
+.flat{
+    height: 2em;
+    position: absolute;
+    left: 290px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    top: 30px;
+}
+
+.flat-item{
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    display: table;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin: 0 15px;
+}
+.flat-item:first-child{
+    float: left;
+    display: table;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 6rem;
+    left: -16px;
+    margin-right: 390px;
+    line-height: 2rem;
+}
+.flat .flat-item a{
+    position: relative;
+    display: block;
+    color: #262626;
+    transition: .5s;
+    padding: 5px 10px;
+}
+
+.flat .flat-item a::before{
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    /* #e91e63原来的粉红颜色就是这个 */
+    border: 3px solid #8F82C3;
+    border-width:0 0 3px 3px;
+    transition: .5s;
+    opacity: 0;
+}
+.flat .flat-item a:hover::before{
+    bottom: -8px;
+    left: -8px;
+    opacity: 1;
+}
+.flat .flat-item a:hover{
+    color: #fff;
+    background: #8F82C3;
+}
+.flat .flat-item a::after{
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #8F82C3;
+    border-width:3px 3px 0 0;
+    transition: .5s;
+    opacity: 0;
+}
+.flat .flat-item a:hover::after{
+    top: -8px;
+    right: -8px;
+    opacity: 1;
+}
+
+/* index的css */
+.main{
+    position: relative;
+    text-align: center;
+    top:120px;
+}
+.hezi{
+    width: 100%;
+    height: 210px;
+}
+    /* 头像的css */
+.avatar{
+    position: relative;
+    display: table-cell;
+    width:200px; 
+    height:200px;
+    top:90px;
+    left: 350px;
+}
+
+.avatar img{
+    display: block;
+    width:200px; 
+    height:200px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.site-title{
+    margin-top: 90px;
+}
+
+.site-title>a{
+    color: rgb(33,33,33);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+}
+
+.site-description>p{
+    color: rgb(33,33,33);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+    /* 图表链接 */
+.share-link>ul{
+    position: relative;
+    left: 265px;
+}
+.share-link .icon{
+    text-align: center;
+}
+
+.share-link .icon>li a i{
+    color: rgb(33,33,33);
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    float: left;
+    /* margin: 1.6rem 1.2rem; */
+    padding:1.6rem 1.2rem;
+}
+.share-link .icon>li a i:hover{
+    /* font-size: 40px; */
+    color: #8F82C3;
+    text-shadow: 0 2px 2px 0 rgb(74, 124, 218);
+}
+
+.icon>li{
+    font-size: 3em;
+}
+
+.github{
+    font-size: 30px;
+}
+
+
+/* footer的css格式 */
+
+
+.footer{
+    position: absolute;
+    margin-top: 15px;
+    text-align: center;
+    /* top: 94%; */
+    left: 21%;
+}
+
+.footer div>.footer-discription{
+    color: rgb(33,33,33);
+    font-family: Merriweather,Georgia,serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 4px;
+}
+.footer div>.footer-discription>a{
+    color: #8F82C3;
+}
+
+.line{
+    border-bottom: 2px solid rgba(33, 33, 33, 0.2);
+    width: 300px;
+    margin: 0 auto;
+    /* margin-top: 130px; */
+}
+
+/* list页面 */
+.list{
+    margin-top: 80px;
+    top:30px;
+}
+
+.article-display{
+    margin-top: 30px;
+}
+.page-title{
+    font-family: fira code;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.article-title>a{
+    color: #8AA2D3;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Source Han Sans SC","Source Han Sans CN","Source Han Sans","Microsoft YaHei",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    line-height: 1.5em;
+}
+    /* 文章标题动画是在tags标签那里的动画效果拿来的 */
+.article-title>a:hover{
+    color: #8E82BC;
+    animation: animate 1.5s linear infinite;
+}
+
+.other-info{
+    margin-bottom: 8px;
+}
+
+.date{
+    color: #9EA1A3;
+    margin-right: 10px;
+}
+
+.list-tags{
+    font-family:  -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Source Han Sans SC","Source Han Sans CN","Source Han Sans","Microsoft YaHei",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 15px;
+    line-height: 1.5em;
+    color: #8E82BC;
+}
+
+.description{
+    font-family: -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Source Han Sans SC","Source Han Sans CN","Source Han Sans","Microsoft YaHei",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.content{
+    font-family: -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Source Han Sans SC","Source Han Sans CN","Source Han Sans","Microsoft YaHei",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+
+/* tags页面 */
+.tags{
+    margin-top: 80px;
+    top:30px;
+}
+
+    /* tags的topbar的css，由于引入head在tags里面样式有点变化，
+    无奈把head代码拿过来并将class名字改了一下，
+    再用上面的topbar的css设置一下样式 */
+.flat-tags{
+    height: 2em;
+    position: absolute;
+    left: 295px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    top: 30px;
+}
+
+.flat-item-tags{
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    display: table;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 2rem;
+    margin: 0 15px;
+}
+.flat-item-tags:first-child{
+    float: left;
+    display: table;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 6rem;
+    left: -16px;
+    margin-right: 480px;
+    line-height: 2rem;
+}
+.flat-tags .flat-item-tags a{
+    position: relative;
+    display: block;
+    color: #262626;
+    transition: .5s;
+    padding: 5px 10px;
+}
+
+.flat-tags .flat-item-tags a::before{
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    /* #e91e63原来的粉红颜色就是这个 */
+    border: 3px solid #8F82C3;
+    border-width:0 0 3px 3px;
+    transition: .5s;
+    opacity: 0;
+}
+.flat-tags .flat-item-tags a:hover::before{
+    bottom: -8px;
+    left: -8px;
+    opacity: 1;
+}
+.flat-tags .flat-item-tags a:hover{
+    color: #fff;
+    background: #8F82C3;
+}
+.flat-tags .flat-item-tags a::after{
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #8F82C3;
+    border-width:3px 3px 0 0;
+    transition: .5s;
+    opacity: 0;
+}
+.flat-tags .flat-item-tags a:hover::after{
+    top: -8px;
+    right: -8px;
+    opacity: 1;
+}
+
+    /* 设置tags界面标签显示布局 ,利用grid布局*/
+.tags{
+    margin-bottom: 100px;
+}
+
+.tag-cloud{
+    line-height: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    row-gap: 20px;
+    column-gap: 15px;
+    /* 元素垂直对齐 */
+    align-items: center;
+    /* 元素水平对齐 */
+    justify-items: center;
+}
+
+.tags-item{
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+    /* 将页面标签做出鼠标浮动效果 */
+.tag-cloud>a{
+    color: #8AA2D3;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Source Han Sans SC","Source Han Sans CN","Source Han Sans","Microsoft YaHei",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    line-height: 1.5em;
+}
+
+.tag-cloud>a:hover{
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Source Han Sans SC","Source Han Sans CN","Source Han Sans","Microsoft YaHei",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    line-height: 1.5em;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        color: #70a1ff;
+        filter: blur(.1px);
+        text-shadow: 0 0 10px #76ec9b,
+        0 0 40px #76ec9b,
+        0 0 80px #76ec9b,
+        0 0 100px #76ec9b
+    }
+    50%{
+        color: #70a1ff;
+        filter: blur(.1px);
+        text-shadow: 0 0 10px #34e7e4
+    }
+    40%,60%{
+        color: #70a1ff;
+        filter: blur(.1px);
+        text-shadow: 0 0 10px #34e7e4,
+        0 0 40px #34e7e4
+    }
+    20%,80%{
+        color: #70a1ff;
+        filter: blur(.1px);
+        text-shadow: 0 0 10px #34e7e4,
+        0 0 40px #34e7e4,
+        0 0 80px #34e7e4,
+    }
+}
+
+/* single文章界面css */
+.empty-box{
+   margin-bottom: 50px;
+}
+
+.single{
+    margin-top: 80px;
+    top:30px;
+}
+
+.single-tags{
+    display: inline-block;
+}
+
+.single-tags:hover{
+    border-bottom: 1px solid #8E82BC;
+}
+
+.single-flat>li{
+    float: left;
+}
+
+.single-tags{
+    font-family:  -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Source Han Sans SC","Source Han Sans CN","Source Han Sans","Microsoft YaHei",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 15px;
+    line-height: 1.5em;
+    color: #8E82BC;
+}
+
+.single-title{
+    color: #8AA2D3;
+    font-size: 1.75em;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Source Han Sans SC","Source Han Sans CN","Source Han Sans","Microsoft YaHei",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    line-height: 1.5em;
+}
